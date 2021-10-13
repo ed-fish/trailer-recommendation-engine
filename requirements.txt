@@ -1,0 +1,6 @@
+youtube_search_python==1.4.9
+numpy==1.17.4
+pandas==1.2.4
+annoy==1.17.0
+streamlit==1.0.0
+torch==1.8.0+cu111
