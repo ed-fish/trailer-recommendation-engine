@@ -2,11 +2,9 @@ import pickle
 import os
 import re
 import random
-import torch
 import numpy as np
 from annoy import AnnoyIndex
 import pandas as pd
-from torch.utils.tensorboard import SummaryWriter
 import streamlit as st
 from youtubesearchpython import VideosSearch
 
