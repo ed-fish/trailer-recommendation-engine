@@ -17,22 +17,22 @@ st.title('Movie trailer recomendation')
 
 def annoy_processor(random_choice=False, id_n=0):
     # # 4096
-    # from annoy import AnnoyIndex
+    # from annoy import annoyindex
 
-#     recall = {}
+    recall = {}
 
-#     f = 4096
-#     t = AnnoyIndex(f, 'euclidean')
-#     print(len(data_base.keys()))
-#     for i in range(len(data_base.keys())):
-#         v = data_base[i]["embedding"]
-#         t.add_item(i, v)
+    f = 4096
+    t = AnnoyIndex(f, 'euclidean')
+    print(len(data_base.keys()))
+    for i in range(len(data_base.keys())):
+        v = data_base[i]["embedding"]
+        t.add_item(i, v)
 
-#     t.build(2000)
+    t.build(2000)
 
-#     t.save('/home/ed/self-supervised-video/data_processing/test2.ann')
+    t.save('./test.ann')
     u = AnnoyIndex(4096, 'euclidean')
-    u.load("test2.ann")
+    u.load("./test.ann")
     if random_choice:
         results = u.get_nns_by_item(random.randrange(580), 10)
     else:
