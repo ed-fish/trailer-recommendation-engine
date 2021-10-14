@@ -5,7 +5,7 @@
 
 Basic trailer recommendation engine using an audio-visual video transformer network and ANNOY
 
-Generates approximate nearest neighbours of embedding vectors retrived from a model trained only on audio-visual features (no meta data!) 
+Generates approximate nearest neighbours of embedding vectors retrieved from a model trained only on audio-visual features (no meta data!) 
 
 Currently only features 580 trailers taken randomly from the validation set of MMX-20 Trailer Dataset.
 
