@@ -12,7 +12,8 @@ from youtubesearchpython import VideosSearch
 with open("embed_dict.pkl", "rb") as file:
     data_base = pickle.load(file)
 
-st.title('Movie trailer recomendation')
+st.title('Movie trailer recommendation')
+st.text("Approximate nearest neighbours using only visual features (no metadata!). Embeddings extracted from a custom video transformer encoder.")
 
 
 def annoy_processor(random_choice=False, id_n=0):
