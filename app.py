@@ -52,7 +52,7 @@ def load_data(nrows):
     return data
 
 def retrieve_movies(random_choice=False, id_n=0):
-    st.subheader("10 similiar movies")
+    st.subheader("10 similar movies")
     data = annoy_processor(random_choice, id_n)
 #    st.write(annoy_processor())
     col1, col2 = st.columns(2)
